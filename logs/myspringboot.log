@@ -1,0 +1,127 @@
+2018-03-10 09:34:39.064 ERROR 13116 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: DEBUG   for 'org.springframework.web'
+2018-03-10 09:34:39.068 ERROR 13116 --- [main] o.s.b.l.LoggingApplicationListener       : Cannot set level: INFO   for 'null'
+2018-03-10 09:34:39.151  INFO 13116 --- [main] com.westlife.demo.Application            : Starting Application on LAPTOP-NQRD58OA with PID 13116 (started by 28953 in F:\ IDcard\com.LicensePlate)
+2018-03-10 09:34:39.151  INFO 13116 --- [main] com.westlife.demo.Application            : No active profile set, falling back to default profiles: default
+2018-03-10 09:34:39.282  INFO 13116 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Sat Mar 10 09:34:39 CST 2018]; root of context hierarchy
+2018-03-10 09:34:40.920  INFO 13116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-03-10 09:34:41.570  INFO 13116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration' of type [class org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 09:34:41.645  INFO 13116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 09:34:41.816  INFO 13116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58e20e5f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 09:34:42.354  INFO 13116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'redisConfig' of type [class com.westlife.demo.service.RedisConfig$$EnhancerBySpringCGLIB$$26548113] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 09:34:42.383  INFO 13116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'keyGenerator' of type [class com.westlife.demo.service.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 09:34:42.386  INFO 13116 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [class org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$a1f4447d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-10 09:34:43.334  INFO 13116 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2018-03-10 09:34:43.345  INFO 13116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-03-10 09:34:43.346  INFO 13116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.24
+2018-03-10 09:34:43.893  INFO 13116 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2018-03-10 09:34:43.898  INFO 13116 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-03-10 09:34:43.898  INFO 13116 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4657 ms
+2018-03-10 09:34:44.339  INFO 13116 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-03-10 09:34:44.355  INFO 13116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'errorPageFilter' to: [/*]
+2018-03-10 09:34:44.356  INFO 13116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-10 09:34:44.357  INFO 13116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-10 09:34:44.357  INFO 13116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-10 09:34:44.358  INFO 13116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-10 09:34:46.324  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.westlife.demo.controller.CarController.index()
+2018-03-10 09:34:46.325  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryAllProvinceManage]}" onto public java.lang.String com.westlife.demo.controller.CarController.queryAllProvinceManage(org.springframework.ui.Model)
+2018-03-10 09:34:46.325  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/queryAll]}" onto public java.lang.String com.westlife.demo.controller.CarController.queryAll(org.springframework.ui.Model)
+2018-03-10 09:34:46.326  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-03-10 09:34:46.328  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-03-10 09:34:46.329  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-03-10 09:34:46.330  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-03-10 09:34:46.333  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-10 09:34:46.333  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-10 09:34:46.856  INFO 13116 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1198b989: startup date [Sat Mar 10 09:34:39 CST 2018]; root of context hierarchy
+2018-03-10 09:34:46.970  INFO 13116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 09:34:46.971  INFO 13116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 09:34:47.090  INFO 13116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-10 09:34:47.873  INFO 13116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-03-10 09:34:47.876  INFO 13116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'readDataSource' has been autodetected for JMX exposure
+2018-03-10 09:34:47.890  INFO 13116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'readDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=readDataSource,type=DruidDataSource]
+2018-03-10 09:34:47.916  INFO 13116 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-03-10 09:34:47.960  INFO 13116 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-03-10 09:34:47.989  INFO 13116 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-03-10 09:34:48.001  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.005  INFO 13116 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: index belongs to groups: [[ResourceGroup{groupName='car-controller', position=0, controller=com.westlife.demo.controller.CarController}]] 
+2018-03-10 09:34:48.007  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.007  INFO 13116 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryAllProvinceManage belongs to groups: [[ResourceGroup{groupName='car-controller', position=0, controller=com.westlife.demo.controller.CarController}]] 
+2018-03-10 09:34:48.008  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.016  INFO 13116 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: queryAll belongs to groups: [[ResourceGroup{groupName='car-controller', position=0, controller=com.westlife.demo.controller.CarController}]] 
+2018-03-10 09:34:48.022  INFO 13116 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/car-controller Description: car-controller Position: 0
+2018-03-10 09:34:48.059  INFO 13116 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 09:34:48.059  INFO 13116 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-03-10 09:34:48.073  INFO 13116 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 09:34:48.074  INFO 13116 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-03-10 09:34:48.091  INFO 13116 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /.com.westlife.demo.controller.CarController.index.DefaultGenericTypeNamingStrategy
+2018-03-10 09:34:48.092  INFO 13116 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /.com.westlife.demo.controller.CarController.index.DefaultGenericTypeNamingStrategy
+2018-03-10 09:34:48.127  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.138  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.159  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.160  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.167  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.168  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.170  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.171  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.173  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.174  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.186  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.187  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.189  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.190  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.191  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.192  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was car-controller
+2018-03-10 09:34:48.202  INFO 13116 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 09:34:48.202  INFO 13116 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-03-10 09:34:48.202  INFO 13116 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 09:34:48.203  INFO 13116 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-03-10 09:34:48.203  INFO 13116 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /queryAll.com.westlife.demo.controller.CarController.queryAll.DefaultGenericTypeNamingStrategy
+2018-03-10 09:34:48.203  INFO 13116 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /queryAll.com.westlife.demo.controller.CarController.queryAll.DefaultGenericTypeNamingStrategy
+2018-03-10 09:34:48.221  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.222  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.225  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.226  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.229  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.234  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.236  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.236  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.238  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.240  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.247  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.251  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.256  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.257  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.260  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.261  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAll was car-controller
+2018-03-10 09:34:48.265  INFO 13116 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 09:34:48.267  INFO 13116 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-03-10 09:34:48.268  INFO 13116 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-03-10 09:34:48.268  INFO 13116 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-03-10 09:34:48.269  INFO 13116 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /queryAllProvinceManage.com.westlife.demo.controller.CarController.queryAllProvinceManage.DefaultGenericTypeNamingStrategy
+2018-03-10 09:34:48.269  INFO 13116 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /queryAllProvinceManage.com.westlife.demo.controller.CarController.queryAllProvinceManage.DefaultGenericTypeNamingStrategy
+2018-03-10 09:34:48.270  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.271  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.273  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.278  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.289  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.291  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.293  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.294  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.295  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.299  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.301  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.302  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.305  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.306  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.307  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.312  INFO 13116 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method queryAllProvinceManage was car-controller
+2018-03-10 09:34:48.565  INFO 13116 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2018-03-10 09:34:48.573  INFO 13116 --- [main] com.westlife.demo.LoadDataService        : ************************启动时加载数据(CarList数据)**********************》》》》》》》》
+2018-03-10 09:34:48.730  INFO 13116 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-03-10 09:34:49.308  INFO 13116 --- [main] com.westlife.demo.LoadDataService        : ************************结束加载数据(CarList数据)**********************》》》》》》》》
+2018-03-10 09:34:49.309  INFO 13116 --- [main] com.westlife.demo.LoadDataService        : ************************启动时加载数据(pList数据)**********************》》》》》》》》
+2018-03-10 09:34:49.320  INFO 13116 --- [main] com.westlife.demo.LoadDataService        : ************************结束加载数据(pList数据)**********************》》》》》》》》
+2018-03-10 09:34:49.322  INFO 13116 --- [main] com.westlife.demo.Application            : Started Application in 10.643 seconds (JVM running for 11.27)
+2018-03-10 09:34:49.323  INFO 13116 --- [main] com.westlife.demo.Application            : SpringBoot加载完毕
+2018-03-10 09:34:59.703  INFO 13116 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-03-10 09:34:59.706  INFO 13116 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-10 09:34:59.749  INFO 13116 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms

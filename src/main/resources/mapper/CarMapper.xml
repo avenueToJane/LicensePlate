@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.westlife.demo.mapper.CarMapper">
+	
+	<select id="selectAll" resultType="com.westlife.demo.model.Car">
+	
+	     select p.code,p.city_id,c.city_name,c.city_lon,c.city_lat,pr.province_name,pr.province_id
+	    from platenum_addr_tb p
+	    left join city_manage_tb c on p.city_id=c.city_id
+	    left join province_manage_tb pr on c.province_id=pr.province_id
+	    
+	</select>
+	
+	<select id="selectAllProvinceManage" resultType="com.westlife.demo.model.ProvinceManage">
+	
+	     select * from province_manage_tb
+	    
+	</select>
+
+</mapper>
