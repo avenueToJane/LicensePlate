@@ -26,6 +26,10 @@
 <body style="text-align: center;">
 
 	<h2>车牌归属地信息</h2>
+	<p>
+   <a href="<%=contextPath%>/queryAllProvinceManage">快速查询各省市车牌信息点此处</a>
+  
+</p>
 	<div style="margin: 20px 0;" id="p" class="easyui-progressbar"
 		style="width:400px;"></div>
 	<div>
