@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import com.westlife.demo.mapper.CarMapper;
 import com.westlife.demo.model.Car;
+import com.westlife.demo.model.ProvinceManage;
 
 
 @Service
@@ -22,6 +23,11 @@ public class CarService {
 	public List<Car> selectAll() {
 		List<Car> idCardsList=carMapper.selectAll();
 		return idCardsList;
+	}
+	
+	public List<ProvinceManage> selectAllProvinceManage(){
+		List<ProvinceManage> provinceManageList=carMapper.selectAllProvinceManage();
+		return provinceManageList;
 	}
 
 }

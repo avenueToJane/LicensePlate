@@ -50,7 +50,7 @@ public class CarController {
 	protected static final Logger logger = LoggerFactory.getLogger(CarController.class);
 
 	@Autowired
-	private CarService idCardService;
+	private CarService carService;
 
 	private ConcurrentHashMap<String, Object> pool = new ConcurrentHashMap<>();
 
@@ -72,7 +72,7 @@ public class CarController {
 	@RequestMapping(value = "/queryAll")
 	public String queryAll(Model model){
 		
-		//List<IDCard> idCardList = idCardService.selectAll();//从数据库中取数据
+		//List<Car> carList = carService.selectAll();//从数据库中取数据
 		List<Car> carList=RuntimeData.getCarMap().get("carList");//从内存中取
 		model.addAttribute("carList", carList);
 		System.out.println(carList);
@@ -83,11 +83,12 @@ public class CarController {
 	@RequestMapping(value = "/queryAllProvinceManage")
 	public String queryAllProvinceManage(Model model){
 		
-		//List<IDCard> idCardList = idCardService.selectAll();//从数据库中取数据
+		//List<ProvinceManage> pList = carService.selectAllProvinceManage();//从数据库中取数据
 		List<ProvinceManage> pList=RuntimeData.getProvinceManageMap().get("pList");//从内存中取
 		model.addAttribute("pList", pList);
 		
 		List<Car> carList=RuntimeData.getCarMap().get("carList");//从内存中取
+		//List<Car> carList = carService.selectAll();//从数据库中取数据
 		model.addAttribute("carList", carList);
 		System.out.println(pList);
 		return "car";
